@@ -34,8 +34,8 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-http_proxy="http://proxy.cmltd.net.au:8080"
-https_proxy="http://proxy.cmltd.net.au:8080"
+http_proxy=""
+https_proxy=""
 
 if [[ $toggle = "on" ]]
 then

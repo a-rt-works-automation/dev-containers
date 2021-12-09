@@ -1,0 +1,29 @@
+{
+    "name": "Terraform Local Runner",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "vscode",
+    "runServices": [
+        "vscode"
+    ],
+    "shutdownAction": "stopCompose",
+    "workspaceFolder": "/workspace",
+	"extensions": [
+		"hashicorp.terraform",
+		"ms-vscode.azurecli",
+		"ms-azuretools.vscode-azureterraform",
+		"ms-azuretools.vscode-docker"
+	],
+    "settings": {
+        "files.eol": "\n",
+        "remote.extensionKind": {
+            "ms-azuretools.vscode-docker": "workspace"
+        },
+        "terraform.languageServer": {
+			"enabled": true,
+			"args": []
+		},
+		"azureTerraform.terminal": "integrated"
+    }
+}
